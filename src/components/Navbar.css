@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.navbardiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5625rem;
+    margin-bottom: 0;
+    margin-top: 1.25rem;
+}
+
+.navDvmLogo{
+    height: 100px;
+    width: 100px;
+    background-color: #1F1F1F;
+    border-radius: 50px;
+    border: 1px solid #5B5B5B;
+    display: flex;
+    align-items: center;
+}
+
+.navDvmSvg{
+    translate: 29px 0px;
+}
+
+.searchbar{
+    width: 750px;
+    height: 75px;
+    background-color: rgba(90, 90, 90, 0.3);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 49px;
+    gap: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+.searchbarText{
+    font-family: 'DM Sans';
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #BFBFBF;
+}
+    
+
+.navNotiBell{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(91, 91, 91, 0.3);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
