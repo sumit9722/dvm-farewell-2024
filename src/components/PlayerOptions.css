@@ -1,0 +1,6 @@
+.playerOptionDiv{
+    display: flex;
+    width: 21vw;
+    justify-content: end;
+    gap: 20px;
+}

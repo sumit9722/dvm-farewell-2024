@@ -1,0 +1,32 @@
+.playerdiv{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.time{
+    font-size: 16px; /*absolute value*/
+    font-family: "DM Sans";
+    font-weight: 700;
+}

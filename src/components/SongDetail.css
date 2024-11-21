@@ -1,0 +1,16 @@
+.songDetail{
+    width: 21vw;
+    height: 100px;
+    background-color: #0B0B0B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    gap: 23px;
+}
+
+.songName{
+    font-size: 30px; /*absolute value*/
+    font-family: "DM Sans";
+    font-weight: 600;
+}
