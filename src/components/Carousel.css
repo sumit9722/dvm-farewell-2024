@@ -55,18 +55,21 @@
     font-weight: 500;
 }
 
+.verifyTick{
+    padding: 10px;
+}
+
 .tickCircle{
     width: 28.05px;
     height: 28.05px;
     border-radius: 34px;
-    background-color: white;
+    background-color: #784BD2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .tick{
-    color: aqua;
 }
 
 @media (max-height : 850px)

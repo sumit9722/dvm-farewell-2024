@@ -56,11 +56,11 @@ export default function MainBody() {
   return (
     <>
         <div className="mainbody">
-            <SideMenu></SideMenu>
-            <PlaylistSection />
-            <Carousel items={[data[currentIndex]]} ></Carousel>
+            <SideMenu />
+            <PlaylistSection items = {data} curr ={currentIndex}/>
+            <Carousel items={[data[currentIndex]]} />
         </div>
-        <BottomPlayer prev={handlePrev} next={handleNext}/>
+        <BottomPlayer prev={handlePrev} next={handleNext} items={[data[currentIndex]]}/>
     </>
   );
 }

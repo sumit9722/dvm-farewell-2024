@@ -7,4 +7,5 @@
     width: 100vw;
     background-color: #080808;
     height: 96px; /*Absolute Value*/
+    z-index: 10;
 }

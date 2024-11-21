@@ -3,4 +3,13 @@
     height: 100%;
     background-color: #4D3F68;
     border-radius: 10px;
+    position: relative;
+}
+
+.blur{
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translate(0%,-50%);
 }

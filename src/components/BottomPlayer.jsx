@@ -6,7 +6,7 @@ import PlayerOptions from "./PlayerOptions"
 export default function BottomPlayer(navFunc){
     return (
         <div className="bottomPlayerDiv">
-            <SongDetail></SongDetail>
+            <SongDetail items = {navFunc.items} />
             <Player prev={navFunc.prev} next={navFunc.next}></Player>
             <PlayerOptions></PlayerOptions>
         </div>

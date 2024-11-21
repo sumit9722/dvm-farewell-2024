@@ -1,12 +1,17 @@
 import "./SongDetail.css"
 
-export default function SongDetail(){
+export default function SongDetail({ items }){
     return (
-        <div className="songDetail">
-            <div className="songDetailPic">
-                <img src="/samplesongpic.png" alt="samplepics" className="songDetailImg"/>
+        <>
+        {items.map((item, index) => (
+            <div className="songDetail" key={index}>
+                <div className="songDetailPic">
+                    <img src={item.img} alt="samplepics" className="songDetailImg"/>
+                </div>
+                <div className="songName">{item.name}</div>
             </div>
-            <div className="songName">Senior Name</div>
-        </div>
+            ))
+            }
+        </>
     )
 }

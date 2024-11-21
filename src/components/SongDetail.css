@@ -15,6 +15,12 @@
     font-weight: 600;
 }
 
+.songDetailPic{
+    height: 48.75px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
 .songDetailImg{
-    scale: 0.75;
+    height: 100%;
 }

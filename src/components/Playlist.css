@@ -1,6 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../assets/CircularStd-Book.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MyCustomFont2';
+    src: url('../assets/CircularStd-Medium.ttf') format('truetype');
+}
+
+
 .playlistDiv{
     background-image: linear-gradient(#2D165A, #000000);
     height: 57.5%;
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .playlistIcons{
@@ -18,7 +34,111 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "DM Sans";
+}
+
+.followingBtn:hover{
+    background-color: #784BD2;
+}
+
+.playlistTableTitles{
+    font-family: "DM Sans";
+    font-size: 20.25px;
+    font-weight: 500;
+    color: #8B8A88;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2fr 7fr 2.5fr 3.5fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+}
+
+.hash{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.titleName{
+    justify-self: start;
+}
+
+.timestampTitle{
+    grid-row: 1/2;
+    grid-column: 5/6;
+}
+
+.line{
+    border-top: 1px #A2A2A2 solid;
+    width: 90%;
+    margin-top: 10px;
 }
 
 .playlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100% - 126.75px );
+    padding-bottom: 10px;
+}
+
+.playlistdata{
+   
+    overflow-y: scroll;
+    flex:1;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* height: 40%; */
+}
+
+.playlistdata::-webkit-scrollbar{
+    display: none;
+}
+
+.seniordata{
+    width: 100%;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1;
+    grid-template-columns: 2fr 7fr 2.5fr 3.5fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.seniorImgDiv{
+    height: 48.75px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.seniorImg{
+    height: 100%;
+}
+
+.seniorNamePlaylist{
+    font-family: 'MyCustomFont';
+    font-size: 22.5px;
+    justify-self: start;
+}
+
+.seniorVerticalPlaylist{
+    font-family: 'MyCustomFont2';
+    font-size:15.75px;
+}
+
+.heart{
+    justify-self: end;
+}
+
+.selected{
+    background-color: #2D165A;
 }
