@@ -24,12 +24,12 @@ const data = [
   },
   {
     name: "Ritvik Mittal",
-    vertical: "Game Development",
+    vertical: "Game Dev",
     img: "/seniorImg/ritvik.png"
   },
   {
     name: "Aditya R Patil",
-    vertical: "Design UI/UX",
+    vertical: "UI/UX",
     img: "/seniorImg/aditya.png"
   },
   {
@@ -53,11 +53,15 @@ export default function MainBody() {
       prevIndex === data.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  const handleClick = (ind) => {
+    setCurrentIndex(ind);
+  }
   return (
     <>
         <div className="mainbody">
             <SideMenu />
-            <PlaylistSection items = {data} curr ={currentIndex}/>
+            <PlaylistSection clickFunc = {handleClick} items = {data} curr ={currentIndex}/>
             <Carousel items={[data[currentIndex]]} />
         </div>
         <BottomPlayer prev={handlePrev} next={handleNext} items={[data[currentIndex]]}/>

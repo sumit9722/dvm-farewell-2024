@@ -10,4 +10,5 @@
     padding-right: 13.5px; /*absolute padding value*/
     margin-bottom: 2px;
     max-height: calc(100vh - 98px - 97.5px);
+    position: relative;
 }

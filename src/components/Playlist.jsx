@@ -1,6 +1,6 @@
 import "./Playlist.css"
 
-export default function Playlist({items, curr}) {
+export default function Playlist({clickFunc, items, curr}) {
     return(
         <div className="playlistDiv">
             <div className="playlistIcons">
@@ -31,7 +31,7 @@ export default function Playlist({items, curr}) {
                 <div className="playlistdata">
                     {
                         items.map((item, index) => (
-                            <div className={curr === index ?`seniordata senior${index} selected`:`seniordata senior${index}`} key={index}>
+                            <div className={curr === index ?`seniordata senior${index} selected`:`seniordata senior${index}`} key={index} onClick={() => clickFunc(index)}>
                                 <div className="seniorImgDiv">
                                     <img src={item.img} alt="samplepics" className="seniorImg"/>
                                 </div>

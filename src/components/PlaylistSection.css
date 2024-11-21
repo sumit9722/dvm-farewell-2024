@@ -1,9 +1,17 @@
 .playlistSection{
     flex: 1;
     height: 100%;
+    max-height: calc(100vh - 98px - 97.5px);
     background-color: #4D3F68;
     border-radius: 10px;
     position: relative;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.playlistSection::-webkit-scrollbar{
+    display: none;
 }
 
 .blur{
@@ -12,4 +20,5 @@
     top: 100%;
     left: 0%;
     transform: translate(0%,-50%);
+    pointer-events: none;
 }
