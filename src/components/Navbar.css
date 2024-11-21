@@ -5,33 +5,34 @@
     align-items: center;
     justify-content: space-between;
     margin: 1.5625rem;
-    margin-bottom: 0;
     margin-top: 1.25rem;
 }
 
 .navDvmLogo{
-    height: 100px;
-    width: 100px;
+    height: 80px; /*absolute value*/
+    width: 80px; /*absolute value*/
     background-color: #1F1F1F;
     border-radius: 50px;
     border: 1px solid #5B5B5B;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .navDvmSvg{
-    translate: 29px 0px;
+    translate: 18px 0px; /*absolute value*/
+    height: 46.4px; /*absolute value*/
 }
 
 .searchbar{
-    width: 750px;
-    height: 75px;
+    width: 750px; /*absolute value*/
+    height: 60px; /*absolute value*/
     background-color: rgba(90, 90, 90, 0.3);
     border-radius: 50px;
     display: flex;
     align-items: center;
-    padding-left: 49px;
-    gap: 30px;
+    padding-left: 49px; /*absolute value*/
+    gap: 30px; /*absolute value*/
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -44,9 +45,9 @@
 }
     
 
-.navNotiBell{
-    height: 100px;
-    width: 100px;
+.navNotiBell{ 
+    height: 80px; /*absolute value*/
+    width: 80px; /*absolute value*/
     background-color: rgba(91, 91, 91, 0.3);
     border-radius: 50px;
     display: flex;

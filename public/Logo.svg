@@ -1,0 +1,24 @@
+<svg width="39" height="49" viewBox="0 0 39 49" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_304_631)">
+<rect x="1.00391" y="0.266602" width="37.6" height="48.0305" fill="url(#pattern0_304_631)"/>
+<rect x="5.99121" y="13.6519" width="25.3224" height="27.1648" fill="url(#pattern1_304_631)"/>
+</g>
+<defs>
+<filter id="filter0_d_304_631" x="0.902635" y="0.266602" width="37.8022" height="48.2328" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="0.101272"/>
+<feGaussianBlur stdDeviation="0.0506359"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_304_631"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_304_631" result="shape"/>
+</filter>
+<pattern id="pattern0_304_631" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_304_631" transform="scale(0.00143678 0.00115741)"/>
+</pattern>
+<pattern id="pattern1_304_631" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_304_631" transform="scale(0.00215054 0.00204499)"/>
+</pattern>
+</defs>
+</svg>

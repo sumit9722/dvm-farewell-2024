@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.carouselSection{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 454px;  /*absolute value*/
+    background-color: #101010;
+    border-radius: 10px;
+    padding-top: 38px; /*absolute value*/
+    gap: 20px; /*absolute value*/
+}
+
+.carouselTitle{
+    width: 90%;  /*absolute value*/
+    display: flex;
+    gap: 157px; /*absolute value*/
+}
+
+.carouselTitleText{
+    font-size: 34px; /*absolute value*/
+    font-family: "DM Sans";
+    font-weight: 700;
+}
+
+.seniorImage{
+    width: 90%;
+}
+
+.seniorImg{
+    width: 100%;
+}
+
+.seniorInfo{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seniorDetails{
+
+}
+
+.seniorName{
+    font-size: 42px; /*absolute value*/
+    font-family: "DM Sans";
+    font-weight: 600;
+}
+
+.seniorVertical{
+    color:#7C7C7C;
+    font-family: "DM Sans";
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.tickCircle{
+    width: 33px;
+    height: 33px;
+    border-radius: 34px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tick{
+    width: 34px;
+    height: 34px;
+    color: aqua;
+}
+
+@media (max-height : 850px)
+{
+    .seniorImage{
+        width: 80%;
+    }
+}
+
+@media (max-height : 760px)
+{
+    .carouselSection{
+        width: 400px;
+    }
+
+    .seniorImage{
+        width: 90%;
+    }
+
+    .seniorImage{
+        max-height: 45vh;
+    }
+    .carouselTitleText{
+        font-size: 25px;
+    }
+    .seniorName{
+        font-size: 32px;
+    }
+    .seniorVertical{
+        font-size: 25px;
+    }
+}
+
+@media (max-width : 1300px)
+{
+    .carouselSection{
+        width: 400px;
+    }
+
+    .seniorImage{
+        width: 90%;
+    }
+    .carouselTitleText{
+        font-size: 25px;
+    }
+    .seniorName{
+        font-size: 32px;
+    }
+    .seniorVertical{
+        font-size: 25px;
+    }
+}

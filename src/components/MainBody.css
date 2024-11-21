@@ -1,0 +1,12 @@
+.mainbody{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 20px; /*absolute gap value*/
+    padding-left: 18px; /*absolute padding value*/
+    padding-right: 18px; /*absolute padding value*/
+    margin-bottom: 2px;
+}

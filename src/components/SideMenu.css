@@ -1,0 +1,25 @@
+.sidemenu{
+    width: 100px; /*absolute value*/
+    background-color: #0B0B0B;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    gap:15px;
+}
+
+.tablogo{
+    width: 71px; /*absolute value*/
+    height: 71px; /*absolute value*/
+    background-color: #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabDvmLogo{
+    border: 2px solid white;
+}
