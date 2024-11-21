@@ -1,4 +1,4 @@
-import "./Sidemenu.css"
+import "./SideMenu.css"
 
 export default function SideMenu(){
     return(
