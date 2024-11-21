@@ -1,6 +1,6 @@
 import "./Player.css"
 
-export default function Player(){
+export default function Player(navFunc){
     return (
         <div className="playerDiv">
             <div className="controls">
@@ -10,9 +10,9 @@ export default function Player(){
                     </svg>
                 </div>
                 <div className="previous">
-                    <button>
-                        <svg width="15" height="16.5" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.99707 22C0.444786 22 -0.00292969 21.5523 -0.00292969 21L-0.00292969 1C-0.00292969 0.447716 0.444786 0 0.997071 0H2.78996C3.34225 0 3.78996 0.447716 3.78996 1L3.78996 9.43451L19.0262 0.444916C19.3595 0.248259 19.7803 0.488546 19.7803 0.875549L19.7803 21.1335C19.7803 21.5185 19.3634 21.759 19.0301 21.5664L3.78996 12.7592L3.78996 21C3.78996 21.5523 3.34225 22 2.78996 22H0.99707Z" fill="#C4C4C4"/>
+                    <button onClick={navFunc.prev}>
+                        <svg className="navbtnsvg" width="15" height="16.5" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path className="navbtns" fill-rule="evenodd" clip-rule="evenodd" d="M0.99707 22C0.444786 22 -0.00292969 21.5523 -0.00292969 21L-0.00292969 1C-0.00292969 0.447716 0.444786 0 0.997071 0H2.78996C3.34225 0 3.78996 0.447716 3.78996 1L3.78996 9.43451L19.0262 0.444916C19.3595 0.248259 19.7803 0.488546 19.7803 0.875549L19.7803 21.1335C19.7803 21.5185 19.3634 21.759 19.0301 21.5664L3.78996 12.7592L3.78996 21C3.78996 21.5523 3.34225 22 2.78996 22H0.99707Z" fill="#C4C4C4"/>
                         </svg>
                     </button>
                 </div>
@@ -24,10 +24,10 @@ export default function Player(){
                         </svg>
                     </button>
                 </div>
-                <div className="next">
+                <div className="next" onClick={navFunc.next}>
                     <button>
-                        <svg width="15" height="16.5" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M18.7832 0C19.3355 0 19.7832 0.447716 19.7832 1V21C19.7832 21.5523 19.3355 22 18.7832 22H16.9903C16.438 22 15.9903 21.5523 15.9903 21V12.5655L0.754078 21.5551C0.420767 21.7517 0 21.5115 0 21.1245L-1.90735e-06 0.866495C-1.90735e-06 0.481504 0.416843 0.240952 0.750175 0.433584L15.9903 9.24083V1C15.9903 0.447715 16.438 0 16.9903 0H18.7832Z" fill="#C4C4C4"/>
+                        <svg className="navbtnsvg" width="15" height="16.5" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path className="navbtns" fill-rule="evenodd" clip-rule="evenodd" d="M18.7832 0C19.3355 0 19.7832 0.447716 19.7832 1V21C19.7832 21.5523 19.3355 22 18.7832 22H16.9903C16.438 22 15.9903 21.5523 15.9903 21V12.5655L0.754078 21.5551C0.420767 21.7517 0 21.5115 0 21.1245L-1.90735e-06 0.866495C-1.90735e-06 0.481504 0.416843 0.240952 0.750175 0.433584L15.9903 9.24083V1C15.9903 0.447715 16.438 0 16.9903 0H18.7832Z" fill="#C4C4C4"/>
                         </svg>
                     </button>
                 </div>

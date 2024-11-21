@@ -30,3 +30,7 @@ button{
     font-family: "DM Sans";
     font-weight: 700;
 }
+
+button:hover .navbtnsvg .navbtns{
+    fill: white;
+}
