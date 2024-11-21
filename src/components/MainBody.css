@@ -5,8 +5,8 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    gap: 20px; /*absolute gap value*/
-    padding-left: 18px; /*absolute padding value*/
-    padding-right: 18px; /*absolute padding value*/
+    gap: 15px; /*absolute gap value*/
+    padding-left: 13.5px; /*absolute padding value*/
+    padding-right: 13.5px; /*absolute padding value*/
     margin-bottom: 2px;
 }

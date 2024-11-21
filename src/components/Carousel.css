@@ -5,21 +5,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 454px;  /*absolute value*/
+    width: 385.9px;  /*absolute value*/
     background-color: #101010;
     border-radius: 10px;
-    padding-top: 38px; /*absolute value*/
-    gap: 20px; /*absolute value*/
+    padding-top: 32.3px; /*absolute value*/
+    gap: 15px; /*absolute value*/
 }
 
 .carouselTitle{
     width: 90%;  /*absolute value*/
     display: flex;
-    gap: 157px; /*absolute value*/
+    gap: 133.45px; /*absolute value*/
 }
 
 .carouselTitleText{
-    font-size: 34px; /*absolute value*/
+    font-size: 28.9px; /*absolute value*/
     font-family: "DM Sans";
     font-weight: 700;
 }
@@ -43,7 +43,7 @@
 }
 
 .seniorName{
-    font-size: 42px; /*absolute value*/
+    font-size: 35.7px; /*absolute value*/
     font-family: "DM Sans";
     font-weight: 600;
 }
@@ -56,8 +56,8 @@
 }
 
 .tickCircle{
-    width: 33px;
-    height: 33px;
+    width: 28.05px;
+    height: 28.05px;
     border-radius: 34px;
     background-color: white;
     display: flex;
@@ -66,8 +66,6 @@
 }
 
 .tick{
-    width: 34px;
-    height: 34px;
     color: aqua;
 }
 
@@ -81,7 +79,7 @@
 @media (max-height : 760px)
 {
     .carouselSection{
-        width: 400px;
+        width: 340px;
     }
 
     .seniorImage{
@@ -92,32 +90,36 @@
         max-height: 45vh;
     }
     .carouselTitleText{
-        font-size: 25px;
+        font-size: 21.25px;
     }
     .seniorName{
-        font-size: 32px;
+        font-size: 27.2px;
     }
     .seniorVertical{
-        font-size: 25px;
+        font-size: 21.25px;
     }
 }
 
 @media (max-width : 1300px)
 {
     .carouselSection{
-        width: 400px;
+        width: 340px;
     }
 
     .seniorImage{
         width: 90%;
     }
+
+    .seniorImage{
+        max-height: 45vh;
+    }
     .carouselTitleText{
-        font-size: 25px;
+        font-size: 21.25px;
     }
     .seniorName{
-        font-size: 32px;
+        font-size: 27.2px;
     }
     .seniorVertical{
-        font-size: 25px;
+        font-size: 21.25px;
     }
 }

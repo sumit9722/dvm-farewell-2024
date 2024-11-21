@@ -4,13 +4,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 1.5625rem;
-    margin-top: 1.25rem;
+    margin: 18.75px;
+    margin-top: 15px;
 }
 
 .navDvmLogo{
-    height: 80px; /*absolute value*/
-    width: 80px; /*absolute value*/
+    height: 60px; /*absolute value*/
+    width: 60px; /*absolute value*/
     background-color: #1F1F1F;
     border-radius: 50px;
     border: 1px solid #5B5B5B;
@@ -20,34 +20,34 @@
 }
 
 .navDvmSvg{
-    translate: 18px 0px; /*absolute value*/
-    height: 46.4px; /*absolute value*/
+    translate: 13.5px 0px; /*absolute value*/
+    height: 34.8px; /*absolute value*/
 }
 
 .searchbar{
-    width: 750px; /*absolute value*/
-    height: 60px; /*absolute value*/
+    width: 562.5px; /*absolute value*/
+    height: 45px; /*absolute value*/
     background-color: rgba(90, 90, 90, 0.3);
-    border-radius: 50px;
+    border-radius: 37.5px;
     display: flex;
     align-items: center;
-    padding-left: 49px; /*absolute value*/
-    gap: 30px; /*absolute value*/
+    padding-left: 36.75px; /*absolute value*/
+    gap: 22.5px; /*absolute value*/
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 
 .searchbarText{
     font-family: 'DM Sans';
-    font-size: 1.75rem;
+    font-size: 1.3125rem;
     font-weight: 700;
     color: #BFBFBF;
 }
     
 
 .navNotiBell{ 
-    height: 80px; /*absolute value*/
-    width: 80px; /*absolute value*/
+    height: 60px; /*absolute value*/
+    width: 60px; /*absolute value*/
     background-color: rgba(91, 91, 91, 0.3);
     border-radius: 50px;
     display: flex;
