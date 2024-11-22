@@ -50,6 +50,8 @@ function App() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [duration, setDuration] = useState(144);
+  const [currDuration, setCurrDuration] = useState(0);
   const audioRef = useRef(null);
 
   const handlePause = () => {setIsPlaying((prev) => !prev);};
@@ -73,6 +75,26 @@ function App() {
     setCurrentIndex(ind);
   };
 
+  const handleTime = (val) =>{
+    if (audioRef.current) {
+      audioRef.current.currentTime = val;
+      setCurrDuration(val);
+    }
+  }
+
+  useEffect(()=>{
+    let interval;
+    if(isPlaying){
+      interval = setInterval(() => {
+        setCurrDuration(audioRef.current.currentTime);
+      }, 500);
+    }
+    else { 
+      clearInterval(interval); 
+    } 
+    return () => clearInterval(interval);
+  },[isPlaying])
+
   useEffect(()=>{
 
     if(isPlaying)
@@ -87,31 +109,38 @@ function App() {
   },[isPlaying])
 
   useEffect(() => {
-    if (audioRef.current)
-    {
-      audioRef.current.load();
-      if(isPlaying)
-      {
-        audioRef.current.play();
-      }
-      else
-      {
-        audioRef.current.pause();
-      }
+    const audio = audioRef.current;
+    console.log(audioRef);
+    const handleLoadedMetadata = () => { setDuration(audio.duration); };
+
+    if (audio) { 
+      audio.load(); 
+      audio.addEventListener('loadedmetadata', handleLoadedMetadata); 
+      if (isPlaying) { 
+        audio.play(); 
+      } 
+      else 
+      { 
+        audio.pause(); 
+      } 
     } 
+    return () => { 
+      if (audio) { 
+      audio.removeEventListener('loadedmetadata', handleLoadedMetadata); 
+      }}
   }, [currentIndex]);
 
   return (
     <>
     <div className="page">
       <Navbar />
-      <MainBody data={data} curr={currentIndex} handleClick={handleClick} handlePrev={handlePrev} handleNext={handleNext} handlePause = {handlePause} pause = {isPlaying}/>
+      <MainBody data={data} curr={currentIndex} handleClick={handleClick} handlePrev={handlePrev} handleNext={handleNext} handlePause = {handlePause} pause = {isPlaying} dur = {duration} handleTime = {handleTime} currTime = {currDuration}/>
       <Footer />
     </div>
     <div className="pageMobile">
-      <MobilePage data={data} curr={currentIndex} handlePrev={handlePrev} handleNext={handleNext} handlePause = {handlePause} pause = {isPlaying}/>
+      <MobilePage data={data} curr={currentIndex} handlePrev={handlePrev} handleNext={handleNext} handlePause = {handlePause} pause = {isPlaying} dur = {duration} handleTime = {handleTime} currTime = {currDuration}/>
     </div>
-    <audio ref={audioRef} src={data[currentIndex].audio} autoPlay/>
+    <audio ref={audioRef} src={data[currentIndex].audio} loop/>
     </>
   )
 }

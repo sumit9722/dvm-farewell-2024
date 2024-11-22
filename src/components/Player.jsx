@@ -1,6 +1,28 @@
 import "./Player.css"
+import { useRef } from "react"
+import { useState } from "react";
 
 export default function Player(navFunc){
+    const slideRef = useRef(null);
+    const [sliderValue, setSliderValue] = useState((navFunc.currTime/navFunc.dur) * 100);
+
+    function handleSeekbar(e){
+        setSliderValue(e.target.value);
+        navFunc.time((e.target.value/100)*navFunc.dur)
+    }
+
+    // setSliderValue((navFunc.currTime/navFunc.dur) * 100);
+
+    const beforeStyle = {
+        transform: `scaleX(${(navFunc.currTime/navFunc.dur)})`
+    }
+
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+      }
+
     return (
         <div className="playerDiv">
             <div className="controls">
@@ -51,14 +73,12 @@ export default function Player(navFunc){
                 </div>
             </div>
             <div className="timeline">
-                <div className="time currTime">1:01</div>
+                <div className="time currTime">{formatTime(navFunc.currTime)}</div>
                 <div className="timebar">
-                    <svg width="474" height="4.5" viewBox="0 0 632 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="121" y="0.75" width="511" height="5" rx="2.5" fill="#535353"/>
-                    <rect y="0.75" width="475" height="5" rx="2.5" fill="#C4C4C4"/>
-                    </svg>
+                    <div  style={beforeStyle} className="before"></div>
+                    <input ref={slideRef} type="range" value={`${(navFunc.currTime/navFunc.dur) * 100}`} min="0" max="100"className="seekbar" onChange={handleSeekbar}/>
                 </div>
-                <div className="time finishtime">2:24</div>
+                <div className="time finishtime">{formatTime(navFunc.dur)}</div>
             </div>
         </div>
     )
