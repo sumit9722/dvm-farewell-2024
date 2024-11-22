@@ -24,7 +24,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    padding:36px;
+    padding:25px;
+    padding-left: 36px;
 }
 
 .followingBtn{

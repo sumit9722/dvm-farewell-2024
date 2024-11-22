@@ -39,8 +39,8 @@ export default function MobilePage({data, curr, handlePrev, handleNext}){
                     </svg>
                 </div>
                 <div className="mobileTimestamps">
-                    <div className="startTime">2.01</div>
-                    <div className="endTime">2.24</div>
+                    <div className="time startTime">2:01</div>
+                    <div className="time endTime">2:24</div>
                 </div>
                 <div className="mobileKeyPanel">
                     <div className="mobilePrevious">
