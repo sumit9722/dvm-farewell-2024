@@ -18,7 +18,7 @@
     width: 60px;
     height: 60px;
     border-radius: 60px;
-    background-color: #1B1005;
+    background-color: #0D051B;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,7 +135,7 @@ button:active .navbtnsvg .navbtns{
     justify-content: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    background-color: #582CB1;
+    background-color: #6137B4;
     font-family: 'MyCustomFont';
     font-size: 17px;
     scrollbar-width: none;
@@ -148,5 +148,6 @@ button:active .navbtnsvg .navbtns{
 
 .time{
     font-family: "DM Sans";
+    font-size: 17px;
     font-weight: 400;
 }

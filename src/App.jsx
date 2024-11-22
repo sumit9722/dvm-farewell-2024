@@ -10,31 +10,37 @@ const data = [
     name: "Prateek Kashyap",
     vertical: "Front-End",
     img: "/seniorImg/prateek.png",
+    audio:"/audio/sample1"
   },
   {
     name: "Jay Goyal",
     vertical: "Front-End",
     img: "/seniorImg/jay.png",
+    audio:"/audio/sample2"
   },
   {
     name: "Vaibhav Singla",
     vertical: "Front-End",
     img: "/seniorImg/vaibhav.png",
+    audio:"/audio/sample1"
   },
   {
     name: "Ritvik Mittal",
     vertical: "Game Dev",
-    img: "/seniorImg/ritvik.png"
+    img: "/seniorImg/ritvik.png",
+    audio:"/audio/sample2"
   },
   {
     name: "Aditya R Patil",
     vertical: "UI/UX",
-    img: "/seniorImg/aditya.png"
+    img: "/seniorImg/aditya.png",
+    audio:"/audio/sample1"
   },
   {
     name: "Achinthya Hebbar",
     vertical: "App Dev",
-    img: "/seniorImg/achintya.png"
+    img: "/seniorImg/achintya.png",
+    audio:"/audio/sample2"
   }
 ];
 

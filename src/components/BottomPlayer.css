@@ -1,4 +1,5 @@
 .bottomPlayerDiv{
+    
     padding-right: 19.5px;  /*Absolute Value*/
     padding-left: 19.5px; /*Absolute Value*/
     display: flex;
@@ -6,6 +7,6 @@
     align-items: center;
     width: 100vw;
     background-color: #080808;
-    height: 96px; /*Absolute Value*/
+    height: 100px; /*Absolute Value*/
     z-index: 10;
 }
