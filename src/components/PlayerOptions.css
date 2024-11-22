@@ -2,5 +2,6 @@
     display: flex;
     width: 21vw;
     justify-content: end;
-    gap: 15px;
+    align-items: center;
+    scale:0.75;
 }
