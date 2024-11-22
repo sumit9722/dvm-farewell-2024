@@ -1,6 +1,6 @@
 import "./MobilePage.css"
 
-export default function MobilePage({data, curr, handlePrev, handleNext}){
+export default function MobilePage({data, curr, handlePrev, handleNext, handlePause, pause}){
     return(
         <div className="mobilePage">
             <div className="mobileDvmLogo">
@@ -51,12 +51,25 @@ export default function MobilePage({data, curr, handlePrev, handleNext}){
                         </button>
                     </div>
                     <div className="play">
-                        <button>
-                            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32" cy="32" r="32" fill="white"/>
-                            <path d="M25.5 40.5343V23.5022C25.5 22.3412 26.7623 21.6203 27.7622 22.2103L42.3456 30.8147C43.3344 31.3981 43.328 32.8308 42.3339 33.4053L27.7505 41.833C26.7505 42.4109 25.5 41.6892 25.5 40.5343Z" fill="black" stroke="black"/>
-                            </svg>
-                        </button>
+                    <button onClick={handlePause}>
+                        {
+                            pause?(
+                                <>
+                                    <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 0C8.954 0 0 8.954 0 20C0 31.046 8.954 40 20 40C31.046 40 40 31.046 40 20C40 8.954 31.046 0 20 0ZM18 28H14V12H18V28ZM26 28H22V12H26V28Z" fill="white"/>
+                                    </svg>
+                                </>
+                            ):(
+                                <>
+                                    <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="32" r="32" fill="white"/>
+                                    <path d="M25.5 40.5343V23.5022C25.5 22.3412 26.7623 21.6203 27.7622 22.2103L42.3456 30.8147C43.3344 31.3981 43.328 32.8308 42.3339 33.4053L27.7505 41.833C26.7505 42.4109 25.5 41.6892 25.5 40.5343Z" fill="black" stroke="black"/>
+                                    </svg>
+                                </>
+                            )
+                        }
+                        
+                    </button>
                     </div>
                     <div className="next" onClick={handleNext}>
                         <button>
