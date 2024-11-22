@@ -136,32 +136,35 @@
 
 .seekbar::-webkit-slider-thumb {
     appearance: none;
-    
-}
-.seekbar:hover::-webkit-slider-thumb { 
     width: 10px;
     height: 10px; 
     background: #C4C4C4; 
     border-radius: 50%; 
+    
+}
+.seekbar:hover::-webkit-slider-thumb { 
+    
     
 }
 .seekbar::-moz-range-thumb {
     appearance: none; 
-}
-.seekbar:hover::-moz-range-thumb { 
     width: 10px;
     height: 10px; 
     background: #C4C4C4; 
     border-radius: 50%; 
 }
+.seekbar:hover::-moz-range-thumb { 
+    
+}
 .seekbar::-ms-thumb {
     appearance: none; 
-} 
-.seekbar:hover::-ms-thumb { 
     width: 10px;
     height: 10px; 
     background: #C4C4C4; 
-    border-radius: 50%;  
+    border-radius: 50%; 
+} 
+.seekbar:hover::-ms-thumb { 
+    
 } 
 
 .mobileTimestamps{
