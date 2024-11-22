@@ -51,8 +51,8 @@
     justify-content: center;
     width: 72vw;
     height: 72vw;
-    max-width: 262px;
-    max-height: 262px;
+    max-width: 288.2px;
+    max-height: 288.2px;
     overflow: hidden;
     border-radius: 10px;
     margin-top: 3.5svh;
@@ -68,7 +68,7 @@
     /* align-items: center; */
     justify-content: space-between;
     width: 87.5vw;
-    max-width: 350px;
+    max-width: 385px;
 }
 
 .mobileSeniorName{
@@ -91,7 +91,7 @@
 
 .mobileControlPanel{
     width: 87.5vw;
-    max-width: 350px;
+    max-width: 385px;
     margin-bottom: 10px;
 }
 
@@ -127,12 +127,19 @@ button:active .navbtnsvg .navbtns{
     padding:20px;
     text-align: center;
     width: 90vw;
-    max-width: 375px;
+    max-width: 412.5px;
     flex: 1;
-    overflow: hidden;
+    overflow: scroll;
+
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #1B1005;
     font-family: 'MyCustomFont';
-    font-size: 14px;
+    font-size: 17px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.mobileBlurbn::-webkit-scrollbar{
+    display: none;
 }
