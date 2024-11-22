@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 import PlaylistSection from "./PlaylistSection";
 import BottomPlayer from "./BottomPlayer";
 
-export default function MainBody({data, curr, handleNext, handlePrev, handleClick}) {
+export default function MainBody({data, curr, handleNext, handlePrev, handleClick, handlePause, pause}) {
   
   return (
     <>
@@ -13,7 +13,7 @@ export default function MainBody({data, curr, handleNext, handlePrev, handleClic
             <PlaylistSection clickFunc = {handleClick} items = {data} curr ={curr}/>
             <Carousel items={[data[curr]]} />
         </div>
-        <BottomPlayer prev={handlePrev} next={handleNext} items={[data[curr]]}/>
+        <BottomPlayer prev={handlePrev} next={handleNext} items={[data[curr]]} pause={handlePause} isPause ={pause}/>
     </>
   );
 }

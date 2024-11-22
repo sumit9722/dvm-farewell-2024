@@ -108,7 +108,7 @@
 }
 
 .seniordata:hover{
-    background-color: #3d1e7c;
+    background-color: rgba(108, 90, 141, 0.25);
 }
 
 .seniorImgDiv{
@@ -138,5 +138,5 @@
 }
 
 .selected{
-    background-color: #2D165A;
+    background-color: rgba(233, 228, 242, 0.25);
 }

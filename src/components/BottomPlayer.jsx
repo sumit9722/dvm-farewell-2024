@@ -7,7 +7,7 @@ export default function BottomPlayer(navFunc){
     return (
         <div className="bottomPlayerDiv">
             <SongDetail items = {navFunc.items} />
-            <Player prev={navFunc.prev} next={navFunc.next}></Player>
+            <Player prev={navFunc.prev} next={navFunc.next} pause = {navFunc.pause} isPause={navFunc.isPause}></Player>
             <PlayerOptions></PlayerOptions>
         </div>
     )
