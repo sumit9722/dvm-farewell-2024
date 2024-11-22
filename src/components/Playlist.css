@@ -18,6 +18,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     min-height: fit-content;
+    padding-top: 20px;
 }
 
 .playlistIcons{
@@ -74,8 +75,9 @@
 
 .line{
     border-top: 1px #A2A2A2 solid;
-    width: 90%;
+    width: 100%;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .playlist{

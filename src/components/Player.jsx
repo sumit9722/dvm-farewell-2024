@@ -1,17 +1,12 @@
 import "./Player.css"
 import { useRef } from "react"
-import { useState } from "react";
 
 export default function Player(navFunc){
     const slideRef = useRef(null);
-    const [sliderValue, setSliderValue] = useState((navFunc.currTime/navFunc.dur) * 100);
 
     function handleSeekbar(e){
-        setSliderValue(e.target.value);
         navFunc.time((e.target.value/100)*navFunc.dur)
     }
-
-    // setSliderValue((navFunc.currTime/navFunc.dur) * 100);
 
     const beforeStyle = {
         transform: `scaleX(${(navFunc.currTime/navFunc.dur)})`

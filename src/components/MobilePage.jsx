@@ -1,6 +1,22 @@
 import "./MobilePage.css"
+import { useRef } from "react"
 
-export default function MobilePage({data, curr, handlePrev, handleNext, handlePause, pause}){
+export default function MobilePage({data, curr, handlePrev, handleNext, handlePause, pause, dur, handleTime, currTime}){
+    const slideRef = useRef(null);
+
+    function handleSeekbar(e){
+        handleTime((e.target.value/100)*dur)
+    }
+
+    const beforeStyle = {
+        transform: `scaleX(${(currTime/dur)})`
+    }
+
+    function formatTime(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
+    }
     return(
         <div className="mobilePage">
             <div className="mobileDvmLogo">
@@ -32,15 +48,15 @@ export default function MobilePage({data, curr, handlePrev, handleNext, handlePa
                 </div>
             </div>
             <div className="mobileControlPanel">
-                <div className="moblieTimebar">
-                    <svg className="mobileTimeline" width="632" height="6" viewBox="0 0 632 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="121" y="0.75" width="511" height="5" rx="2.5" fill="#535353"/>
-                    <rect y="0.75" width="475" height="5" rx="2.5" fill="#C4C4C4"/>
-                    </svg>
+                <div className="mobileTimeline">
+                    <div className="timebar">
+                        <div  style={beforeStyle} className="before"></div>
+                        <input ref={slideRef} type="range" value={`${(currTime/dur) * 100}`} min="0" max="100"className="seekbar" onChange={handleSeekbar}/>
+                    </div>
                 </div>
                 <div className="mobileTimestamps">
-                    <div className="time startTime">2:01</div>
-                    <div className="time endTime">2:24</div>
+                    <div className="time startTime">{formatTime(currTime)}</div>
+                    <div className="time endTime">{formatTime(dur)}</div>
                 </div>
                 <div className="mobileKeyPanel">
                     <div className="mobilePrevious">

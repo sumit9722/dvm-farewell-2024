@@ -3,7 +3,7 @@ import "./Playlist.css"
 export default function Playlist({clickFunc, items, curr}) {
     return(
         <div className="playlistDiv">
-            <div className="playlistIcons">
+            {/* <div className="playlistIcons">
                 <div className="playlistPlayBtn">
                     <svg width="54.75" height="54.75" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M36.5 0.25C29.3304 0.25 22.3219 2.37603 16.3606 6.35923C10.3993 10.3424 5.75306 16.0039 3.00938 22.6277C0.265707 29.2515 -0.452164 36.5402 0.94655 43.572C2.34526 50.6038 5.79774 57.063 10.8674 62.1326C15.937 67.2023 22.3962 70.6548 29.428 72.0535C36.4598 73.4522 43.7485 72.7343 50.3723 69.9906C56.9961 67.247 62.6576 62.6007 66.6408 56.6394C70.624 50.6781 72.75 43.6696 72.75 36.5C72.75 31.7396 71.8124 27.0258 69.9907 22.6277C68.1689 18.2297 65.4988 14.2335 62.1326 10.8674C58.7665 7.50126 54.7703 4.8311 50.3723 3.00937C45.9742 1.18763 41.2604 0.25 36.5 0.25ZM29.428 48.4412V22.6499L49.2941 36.5L29.428 48.4412Z" fill="#784BD2"/>
@@ -12,7 +12,7 @@ export default function Playlist({clickFunc, items, curr}) {
                 <div className="followingBtn">
                     Following
                 </div>
-            </div>
+            </div> */}
             <div className="playlist">
                 <div className="playlistTableTitles">
                     <div className="hash">#</div>

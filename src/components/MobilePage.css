@@ -93,15 +93,76 @@
     width: 87.5vw;
     max-width: 385px;
     margin-bottom: 10px;
-}
-
-.mobileTimebar{
-    width: 100%;
+    margin-top: 15px;
 }
 
 .mobileTimeline{
     width: 100%;
+    margin-bottom: 5px;
 }
+
+.timebar{
+    width: 100%;
+}
+
+.seekbar{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    appearance: none;
+    height: 3px;
+    width: 87.5vw;
+    max-width: 385px;
+    background: #535353;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+} 
+
+.before {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 4px;
+    width: 87.5vw;
+    max-width: 385px;
+    background: #C4C4C4;
+    transform: scaleX(0);
+    transform-origin: left;
+    /* transition: transform 0.1s linear; */
+    border-radius: 5px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.seekbar::-webkit-slider-thumb {
+    appearance: none;
+    
+}
+.seekbar:hover::-webkit-slider-thumb { 
+    width: 10px;
+    height: 10px; 
+    background: #C4C4C4; 
+    border-radius: 50%; 
+    
+}
+.seekbar::-moz-range-thumb {
+    appearance: none; 
+}
+.seekbar:hover::-moz-range-thumb { 
+    width: 10px;
+    height: 10px; 
+    background: #C4C4C4; 
+    border-radius: 50%; 
+}
+.seekbar::-ms-thumb {
+    appearance: none; 
+} 
+.seekbar:hover::-ms-thumb { 
+    width: 10px;
+    height: 10px; 
+    background: #C4C4C4; 
+    border-radius: 50%;  
+} 
 
 .mobileTimestamps{
     display: flex;
