@@ -49,8 +49,8 @@
     justify-content: center;
     width: 72vw;
     height: 72vw;
-    max-width: 210px;
-    max-height: 210px;
+    max-width: 262px;
+    max-height: 262px;
     overflow: hidden;
     border-radius: 10px;
     margin-top: 3.5svh;
@@ -66,7 +66,7 @@
     /* align-items: center; */
     justify-content: space-between;
     width: 87.5vw;
-    max-width: 280px;
+    max-width: 350px;
 }
 
 .mobileSeniorName{
@@ -89,7 +89,7 @@
 
 .mobileControlPanel{
     width: 87.5vw;
-    max-width: 280px;
+    max-width: 350px;
     margin-bottom: 10px;
 }
 
@@ -125,7 +125,7 @@ button:active .navbtnsvg .navbtns{
     padding:20px;
     text-align: center;
     width: 90vw;
-    max-width: 300px;
+    max-width: 375px;
     flex: 1;
     overflow: hidden;
     border-top-left-radius: 10px;
