@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../assets/CircularStd-Book.ttf') format('truetype');
+}
+
+.mobilePage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100svh;
+}
+
+.mobileDvmLogo{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background-color: #1B1005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+
+.mobileText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileSubHeading{
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.mobileTitle{
+    font-family: "DM Sans";
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.mobileSeniorPic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72vw;
+    height: 72vw;
+    max-width: 210px;
+    max-height: 210px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 3.5svh;
+    margin-bottom: 5.25svh;
+}
+
+.mobileSeniorImg{
+    height: 100%;
+}
+
+.mobileSeniorDetail{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 87.5vw;
+    max-width: 280px;
+}
+
+.mobileSeniorName{
+    font-family: "DM Sans";
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.mobileSeniorVertical{
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: 500;
+    color: #96887C;
+
+}
+
+.mobileHeart{
+    padding: 5px;
+}
+
+.mobileControlPanel{
+    width: 87.5vw;
+    max-width: 280px;
+    margin-bottom: 10px;
+}
+
+.mobileTimebar{
+    width: 100%;
+}
+
+.mobileTimeline{
+    width: 100%;
+}
+
+.mobileTimestamps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobileKeyPanel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+button:hover .navbtnsvg .navbtns{
+    fill: white;
+}
+
+button:active .navbtnsvg .navbtns{
+    fill: white;
+}
+
+.mobileBlurb{
+    padding:20px;
+    text-align: center;
+    width: 90vw;
+    max-width: 300px;
+    flex: 1;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #1B1005;
+    font-family: 'MyCustomFont';
+    font-size: 14px;
+}
