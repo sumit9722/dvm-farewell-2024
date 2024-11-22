@@ -1,29 +1,30 @@
-.sidemenu{
-    width: 75px; /*absolute value*/
-    background-color: #0B0B0B;
-    height: 100%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 37.5px; /*absolute value*/
-    gap:11.25px; /*absolute value*/
+.sidemenu {
+  width: 75px; /*absolute value*/
+  background-color: #0b0b0b;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37.5px; /*absolute value*/
+  gap: 11.25px; /*absolute value*/
 }
 
-.tablogo{
-    width: 53.25px; /*absolute value*/
-    height: 53.25px; /*absolute value*/
-    background-color: #000000;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tablogo {
+  width: 53.25px; /*absolute value*/
+  height: 53.25px; /*absolute value*/
+  background-color: #000000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.tabDvmLogo{
-    border: 2px solid white;
+.tabDvmLogo {
+  border: 2px solid white;
 }
 
-.bosmlogo{
-    scale: 0.75;
+.bosmlogo {
+  scale: 0.75;
 }
