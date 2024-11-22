@@ -19,10 +19,11 @@
         align-items: center;
         height: 100svh;
         width: 100vw;
-        background-image: linear-gradient( rgba(63, 39, 109, 0.75) 0%,
-         rgba(92, 69, 136, 0.75) 17%,
-         rgba(0, 0, 0, 0.75) 75%,
-         rgba(0, 0, 0, 0.75) 100% 
+        background-image: linear-gradient(
+            rgba(72, 37, 141, 0.75) 0%,
+            rgba(87, 52, 155, 0.75) 17%,
+            rgba(0, 0, 0, 0.75) 75%,
+            rgba(0, 0, 0, 0.75) 100%
          );
     }
 }
