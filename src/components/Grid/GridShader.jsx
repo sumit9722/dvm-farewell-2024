@@ -43,7 +43,7 @@ const GridMaterial = shaderMaterial(
 
         // Scale UV to create grid cells
         vec2 grid = fract(correctedUV * ${
-          window.innerWidth <= 1000 ? "15.0" : "20.0"
+          window.innerWidth <= 1000 ? "10.0" : "20.0"
         });
 
         // Create grid lines with smoothstep
@@ -104,8 +104,8 @@ export default function GridShader() {
   return (
     <div
       style={{
-        width: "100%",
-        height: "100vh",
+        width: "100vw",
+        height: "100dvh",
         zIndex: -1,
         position: "absolute",
         opacity: 0.87,

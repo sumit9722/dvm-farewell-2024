@@ -34,9 +34,9 @@ const data = [
     audio: "/audio/sample2.mp3",
   },
   {
-    name: "Aditya R Patil",
+    name: "Satwik Rath",
     vertical: "UI/UX",
-    img: "/seniorImg/aditya.png",
+    img: "/seniorImg/satwik.png",
     audio: "/audio/sample1.mp3",
   },
   {
