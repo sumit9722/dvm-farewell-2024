@@ -121,13 +121,13 @@ function App() {
     };
 
     if (audio) {
-      audio.load();
+      // audio.load();
       audio.addEventListener("loadedmetadata", handleLoadedMetadata);
-      if (isPlaying) {
-        audio.play();
-      } else {
-        audio.pause();
-      }
+      // if (isPlaying) {
+      //   audio.play();
+      // } else {
+      //   audio.pause();
+      // }
     }
     return () => {
       if (audio) {
@@ -168,7 +168,8 @@ function App() {
           currTime={currDuration}
         />
       </div>
-      <audio ref={audioRef} src={data[currentIndex].audio} onEnded={handleNext}/>
+      {/* <audio ref={audioRef} src={data[currentIndex].audio} onEnded={handleNext}/> */}
+      <audio ref={audioRef} src="/audio/universal.mp3" loop/>
     </>
   );
 }
