@@ -84,6 +84,7 @@ function App() {
 
   const handleClick = (ind) => {
     setCurrentIndex(ind);
+    setIsPlaying(true);
   };
 
   const handleTime = (val) => {
