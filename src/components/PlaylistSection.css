@@ -2,7 +2,7 @@
     flex: 1;
     height: 100%;
     max-height: calc(100vh - 98px - 97.5px);
-    background-color: #4D3F68;
+
     border-radius: 10px;
     position: relative;
     overflow: scroll;
