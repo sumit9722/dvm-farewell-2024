@@ -37,7 +37,7 @@ const data = [
     name: "Harshith Vasireddy",
     vertical: "Back-End",
     img: "/seniorImg/harshith.jpg",
-    audio: "/audio/sample1.mp3",
+    audio: "/audio/universal.mp3",
   },
   {
     name: "Ritvik Mittal",
@@ -49,7 +49,7 @@ const data = [
     name: "Satwik Rath",
     vertical: "UI/UX",
     img: "/seniorImg/satwik.png",
-    audio: "/audio/sample1.mp3",
+    audio: "/audio/universal.mp3",
   },
   {
     name: "Achinthya Hebbar",
