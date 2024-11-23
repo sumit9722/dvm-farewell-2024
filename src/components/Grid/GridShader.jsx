@@ -62,9 +62,9 @@ const GridMaterial = shaderMaterial(
         glowIntensity *= smoothstep(0.1, 0.0, distanceFromWave);
 
         // Grid colors
-        vec3 lineColor = vec3(68.0/255.0, 41.0/255.0, 122.0/255.0); // #44297A
+        vec3 lineColor = vec3(30.0/255.0, 25.0/255.0, 41.0/255.0); // #44297A
         vec3 glowColor = vec3(147.0/255.0, 51.0/255.0, 255.0/255.0); // Saturated purple
-        vec3 backgroundColor = vec3(0.0);
+        vec3 backgroundColor = vec3(21.0/255.0);
 
         // Mix colors
         vec3 gridColor = mix(backgroundColor, lineColor, line);
@@ -77,6 +77,8 @@ const GridMaterial = shaderMaterial(
     }
   `
 );
+
+// 44297A
 
 extend({ GridMaterial });
 
@@ -108,7 +110,7 @@ export default function GridShader() {
         height: "100dvh",
         zIndex: -1,
         position: "absolute",
-        opacity: 0.87,
+        // opacity: 0.87,
       }}
     >
       <Canvas>
