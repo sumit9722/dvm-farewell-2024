@@ -28,6 +28,18 @@ const data = [
     audio: "/audio/sample1.mp3",
   },
   {
+    name: "Harsh Singh",
+    vertical: "Back-End",
+    img: "/seniorImg/harsh.jpg",
+    audio: "/audio/sample2.mp3",
+  },
+  {
+    name: "Harshith Vasireddy",
+    vertical: "Back-End",
+    img: "/seniorImg/harshith.jpg",
+    audio: "/audio/sample1.mp3",
+  },
+  {
     name: "Ritvik Mittal",
     vertical: "Game Dev",
     img: "/seniorImg/ritvik.png",
