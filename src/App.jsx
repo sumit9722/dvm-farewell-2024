@@ -43,7 +43,7 @@ const data = [
     name: "Ritvik Mittal",
     vertical: "Game Dev",
     img: "/seniorImg/ritvik.png",
-    audio: "/audio/ritivk.mp3",
+    audio: "/audio/ritvik.mp3",
   },
   {
     name: "Satwik Rath",
