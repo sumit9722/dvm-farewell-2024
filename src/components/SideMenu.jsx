@@ -113,14 +113,14 @@ export default function SideMenu() {
           />
         </svg>
       </div>
-      <div
+      {/* <div
         className="tablogo"
         onClick={() => {
           window.open("http://bitsbosm.org/", "_blank");
         }}
       >
         <img src="/Logo.png" alt="bosm" className="bosmlogo" />
-      </div>
+      </div> */}
       <div
         className="tablogo tabDvmLogo"
         onClick={() => {
