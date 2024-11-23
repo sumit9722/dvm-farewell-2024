@@ -30,6 +30,7 @@
 
 .headTitle{
     font-family: "DM Sans";
+    width: 60%;
     /* max-height: 225px;
     height: 68%;
 } */
@@ -49,8 +50,9 @@
 .blurb{
     font-family: 'MyCustomFont';
     font-size: 20px;
-    width: 800px;
+    width: 100%;
 }
+
 
 @media (max-height : 800px ) and (max-width : 1250px){
     .subHeading{
@@ -79,6 +81,25 @@
         gap: 20px;
     }
 }
+
+@media (max-width: 1200px)
+{
+    .title{
+        font-size: 50px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
+@media (max-width: 1100px)
+{
+    .title{
+        font-size: 40px;
+        color: white;
+        font-weight: 900;
+    }
+}
+
 
 @media (max-height : 700px ){
     .subHeading{
