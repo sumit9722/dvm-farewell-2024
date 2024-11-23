@@ -1,148 +1,164 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import MainBody from './components/MainBody'
-import MobilePage from './components/MobilePage'
-import Footer from './components/Footer'
+import "./App.css";
+import Navbar from "./components/Navbar";
+import MainBody from "./components/MainBody";
+import MobilePage from "./components/MobilePage";
+import Footer from "./components/Footer";
 import React, { useState } from "react";
-import { useEffect } from 'react'
-import { useRef } from 'react'
+import { useEffect } from "react";
+import { useRef } from "react";
+import GridShader from "./components/Grid/GridShader";
 
 const data = [
   {
     name: "Prateek Kashyap",
     vertical: "Front-End",
     img: "/seniorImg/prateek.png",
-    audio:"/audio/sample1.mp3",
+    audio: "/audio/sample1.mp3",
   },
   {
     name: "Jay Goyal",
     vertical: "Front-End",
     img: "/seniorImg/jay.png",
-    audio:"/audio/sample2.mp3",
+    audio: "/audio/sample2.mp3",
   },
   {
     name: "Vaibhav Singla",
     vertical: "Front-End",
     img: "/seniorImg/vaibhav.png",
-    audio:"/audio/sample1.mp3",
+    audio: "/audio/sample1.mp3",
   },
   {
     name: "Ritvik Mittal",
     vertical: "Game Dev",
     img: "/seniorImg/ritvik.png",
-    audio:"/audio/sample2.mp3",
+    audio: "/audio/sample2.mp3",
   },
   {
     name: "Aditya R Patil",
     vertical: "UI/UX",
     img: "/seniorImg/aditya.png",
-    audio:"/audio/sample1.mp3",
+    audio: "/audio/sample1.mp3",
   },
   {
     name: "Achinthya Hebbar",
     vertical: "App Dev",
     img: "/seniorImg/achintya.png",
-    audio:"/audio/sample2.mp3",
-  }
+    audio: "/audio/sample2.mp3",
+  },
 ];
 
 function App() {
-
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [duration, setDuration] = useState(144);
   const [currDuration, setCurrDuration] = useState(0);
   const audioRef = useRef(null);
 
-  const handlePause = () => {setIsPlaying((prev) => !prev);};
+  const handlePause = () => {
+    setIsPlaying((prev) => !prev);
+  };
 
-  
-  
-  
   const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? data.length - 1 : prevIndex - 1
-  );
+    );
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === data.length - 1 ? 0 : prevIndex + 1
-  );
+    );
   };
 
   const handleClick = (ind) => {
     setCurrentIndex(ind);
   };
 
-  const handleTime = (val) =>{
+  const handleTime = (val) => {
     if (audioRef.current) {
       audioRef.current.currentTime = val;
       setCurrDuration(val);
     }
-  }
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     let interval;
-    if(isPlaying){
+    if (isPlaying) {
       interval = setInterval(() => {
         setCurrDuration(audioRef.current.currentTime);
       }, 500);
+    } else {
+      clearInterval(interval);
     }
-    else { 
-      clearInterval(interval); 
-    } 
     return () => clearInterval(interval);
-  },[isPlaying])
+  }, [isPlaying]);
 
-  useEffect(()=>{
-
-    if(isPlaying)
-    {
+  useEffect(() => {
+    if (isPlaying) {
       audioRef.current.play();
-    }
-    else
-    {
+    } else {
       audioRef.current.pause();
     }
-    
-  },[isPlaying])
+  }, [isPlaying]);
 
   useEffect(() => {
     const audio = audioRef.current;
     console.log(audioRef);
-    const handleLoadedMetadata = () => { setDuration(audio.duration); };
+    const handleLoadedMetadata = () => {
+      setDuration(audio.duration);
+    };
 
-    if (audio) { 
-      audio.load(); 
-      audio.addEventListener('loadedmetadata', handleLoadedMetadata); 
-      if (isPlaying) { 
-        audio.play(); 
-      } 
-      else 
-      { 
-        audio.pause(); 
-      } 
-    } 
-    return () => { 
-      if (audio) { 
-      audio.removeEventListener('loadedmetadata', handleLoadedMetadata); 
-      }}
+    if (audio) {
+      audio.load();
+      audio.addEventListener("loadedmetadata", handleLoadedMetadata);
+      if (isPlaying) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
+    }
+    return () => {
+      if (audio) {
+        audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      }
+    };
   }, [currentIndex]);
 
   return (
     <>
-    <div className="page">
-      <Navbar />
-      <MainBody data={data} curr={currentIndex} handleClick={handleClick} handlePrev={handlePrev} handleNext={handleNext} handlePause = {handlePause} pause = {isPlaying} dur = {duration} handleTime = {handleTime} currTime = {currDuration}/>
-      <Footer />
-    </div>
-    <div className="pageMobile">
-      <MobilePage data={data} curr={currentIndex} handlePrev={handlePrev} handleNext={handleNext} handlePause = {handlePause} pause = {isPlaying} dur = {duration} handleTime = {handleTime} currTime = {currDuration}/>
-    </div>
-    <audio ref={audioRef} src={data[currentIndex].audio} loop/>
+      <GridShader />
+      <div className="page">
+        <Navbar />
+        <MainBody
+          data={data}
+          curr={currentIndex}
+          handleClick={handleClick}
+          handlePrev={handlePrev}
+          handleNext={handleNext}
+          handlePause={handlePause}
+          pause={isPlaying}
+          dur={duration}
+          handleTime={handleTime}
+          currTime={currDuration}
+        />
+        <Footer />
+      </div>
+      <div className="pageMobile">
+        <MobilePage
+          data={data}
+          curr={currentIndex}
+          handlePrev={handlePrev}
+          handleNext={handleNext}
+          handlePause={handlePause}
+          pause={isPlaying}
+          dur={duration}
+          handleTime={handleTime}
+          currTime={currDuration}
+        />
+      </div>
+      <audio ref={audioRef} src={data[currentIndex].audio} loop />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
