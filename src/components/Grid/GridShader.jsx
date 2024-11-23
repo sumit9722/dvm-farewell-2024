@@ -56,9 +56,11 @@ const GridMaterial = shaderMaterial(
           window.innerWidth <= 1000 ? "0.3" : "0.5"
         };
         // Extend the animation range to ensure it goes fully off screen
-        float wavePos = fract(u_time * 0.1) * ${
-          window.innerWidth <= 1000 ? "3.5" : "2.7"
-        } - ${window.innerWidth <= 1000 ? "2.5" : "1.0"};
+        float wavePos = fract(u_time * ${
+          window.innerWidth <= 1000 ? "0.1" : "0.1"
+        }) * ${window.innerWidth <= 1000 ? "1.95" : "2.7"} - ${
+    window.innerWidth <= 1000 ? "1.4" : "1.0"
+  };
         float distanceFromWave = abs(diagonal - wavePos);
 
         // Create subtle glowing effect
