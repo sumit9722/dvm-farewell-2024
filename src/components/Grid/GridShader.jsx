@@ -52,11 +52,13 @@ const GridMaterial = shaderMaterial(
         float line = max(smoothGrid.x, smoothGrid.y);
 
         // Create diagonal wave from top-left
-        float diagonal = (correctedUV.x - correctedUV.y) * 0.5;
-        // Extend the animation range to ensure it goes fully off screen
-        float wavePos = fract(u_time * 0.1) * 2.7 - ${
-          window.innerWidth <= 1000 ? "2.5" : "1.0"
+        float diagonal = (correctedUV.x - correctedUV.y) * ${
+          window.innerWidth <= 1000 ? "0.3" : "0.5"
         };
+        // Extend the animation range to ensure it goes fully off screen
+        float wavePos = fract(u_time * 0.1) * ${
+          window.innerWidth <= 1000 ? "3.5" : "2.7"
+        } - ${window.innerWidth <= 1000 ? "2.5" : "1.0"};
         float distanceFromWave = abs(diagonal - wavePos);
 
         // Create subtle glowing effect
