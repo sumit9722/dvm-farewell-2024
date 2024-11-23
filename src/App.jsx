@@ -168,7 +168,7 @@ function App() {
           currTime={currDuration}
         />
       </div>
-      <audio ref={audioRef} src={data[currentIndex].audio} loop />
+      <audio ref={audioRef} src={data[currentIndex].audio} onEnded={handleNext}/>
     </>
   );
 }

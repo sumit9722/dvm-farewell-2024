@@ -19,7 +19,7 @@ export default function MobilePage({
   }
 
   const beforeStyle = {
-    transform: `scaleX(${currTime / dur})`,
+    transform: `scaleX(${(currTime / dur)<=1?(currTime / dur):1})`,
   };
 
   function formatTime(seconds) {

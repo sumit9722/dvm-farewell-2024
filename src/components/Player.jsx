@@ -9,7 +9,7 @@ export default function Player(navFunc) {
   }
 
   const beforeStyle = {
-    transform: `scaleX(${navFunc.currTime / navFunc.dur})`,
+    transform: `scaleX(${(navFunc.currTime / navFunc.dur)<=1?(navFunc.currTime / navFunc.dur):1})`,
   };
 
   function formatTime(seconds) {
