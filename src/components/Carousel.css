@@ -1,129 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-.carouselSection{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 385.9px;  /*absolute value*/
-    background-color: #101010;
-    border-radius: 10px;
-    padding-top: 32.3px; /*absolute value*/
-    gap: 15px; /*absolute value*/
+.carouselSection {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 385.9px; /*absolute value*/
+  background-color: #101010;
+  border-radius: 10px;
+  padding-top: 32.3px; /*absolute value*/
+  gap: 15px; /*absolute value*/
 }
 
-.carouselTitle{
-    width: 90%;  /*absolute value*/
-    display: flex;
-    gap: 133.45px; /*absolute value*/
+.carouselTitle {
+  width: 90%; /*absolute value*/
+  display: flex;
+  gap: 133.45px; /*absolute value*/
 }
 
-.carouselTitleText{
-    font-size: 28.9px; /*absolute value*/
-    font-family: "DM Sans";
-    font-weight: 700;
+.carouselTitleText {
+  font-size: 28.9px; /*absolute value*/
+  font-family: "DM Sans";
+  font-weight: 700;
 }
 
-.seniorImage{
+.seniorImage {
+  width: 90%;
+}
+
+.seniorImgCarousel {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.seniorInfo {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seniorDetails {
+}
+
+.seniorName {
+  font-size: 35.7px; /*absolute value*/
+  font-family: "DM Sans";
+  font-weight: 600;
+}
+
+.seniorVertical {
+  color: #7c7c7c;
+  font-family: "DM Sans";
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.verifyTick {
+  padding: 10px;
+}
+
+.tickCircle {
+  width: 28.05px;
+  height: 28.05px;
+  border-radius: 34px;
+  background-color: #784bd2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tick {
+}
+
+@media (max-height: 850px) {
+  .seniorImage {
+    width: 80%;
+  }
+}
+
+@media (max-height: 760px) {
+  .carouselSection {
+    width: 340px;
+  }
+
+  .seniorImage {
     width: 90%;
+  }
+
+  .seniorImage {
+    max-height: 45vh;
+  }
+  .carouselTitleText {
+    font-size: 21.25px;
+  }
+  .seniorName {
+    font-size: 27.2px;
+  }
+  .seniorVertical {
+    font-size: 21.25px;
+  }
 }
 
-.seniorImg{
-    width: 100%;
-    border-radius: 10px;
-}
+@media (max-width: 1300px) {
+  .carouselSection {
+    width: 340px;
+  }
 
-.seniorInfo{
+  .seniorImage {
     width: 90%;
-    display: flex;
-    justify-content: space-between;
-}
+  }
 
-.seniorDetails{
-
-}
-
-.seniorName{
-    font-size: 35.7px; /*absolute value*/
-    font-family: "DM Sans";
-    font-weight: 600;
-}
-
-.seniorVertical{
-    color:#7C7C7C;
-    font-family: "DM Sans";
-    font-size: 33px;
-    font-weight: 500;
-}
-
-.verifyTick{
-    padding: 10px;
-}
-
-.tickCircle{
-    width: 28.05px;
-    height: 28.05px;
-    border-radius: 34px;
-    background-color: #784BD2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.tick{
-}
-
-@media (max-height : 850px)
-{
-    .seniorImage{
-        width: 80%;
-    }
-}
-
-@media (max-height : 760px)
-{
-    .carouselSection{
-        width: 340px;
-    }
-
-    .seniorImage{
-        width: 90%;
-    }
-
-    .seniorImage{
-        max-height: 45vh;
-    }
-    .carouselTitleText{
-        font-size: 21.25px;
-    }
-    .seniorName{
-        font-size: 27.2px;
-    }
-    .seniorVertical{
-        font-size: 21.25px;
-    }
-}
-
-@media (max-width : 1300px)
-{
-    .carouselSection{
-        width: 340px;
-    }
-
-    .seniorImage{
-        width: 90%;
-    }
-
-    .seniorImage{
-        max-height: 45vh;
-    }
-    .carouselTitleText{
-        font-size: 21.25px;
-    }
-    .seniorName{
-        font-size: 27.2px;
-    }
-    .seniorVertical{
-        font-size: 21.25px;
-    }
+  .seniorImage {
+    max-height: 45vh;
+  }
+  .carouselTitleText {
+    font-size: 21.25px;
+  }
+  .seniorName {
+    font-size: 27.2px;
+  }
+  .seniorVertical {
+    font-size: 21.25px;
+  }
 }
