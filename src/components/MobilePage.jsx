@@ -50,8 +50,8 @@ export default function MobilePage({data, curr, handlePrev, handleNext, handlePa
             <div className="mobileControlPanel">
                 <div className="mobileTimeline">
                     <div className="timebar">
-                        <div  style={beforeStyle} className="before"></div>
-                        <input ref={slideRef} type="range" value={`${(currTime/dur) * 100}`} min="0" max="100"className="seekbar" onChange={handleSeekbar}/>
+                        <div  style={beforeStyle} className="mblBefore"></div>
+                        <input ref={slideRef} type="range" value={`${(currTime/dur) * 100}`} min="0" max="100"className="mblSeekbar" onChange={handleSeekbar}/>
                     </div>
                 </div>
                 <div className="mobileTimestamps">
