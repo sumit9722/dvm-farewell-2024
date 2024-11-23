@@ -92,8 +92,8 @@ export default function MobilePage({
             <button onClick={handlePrev}>
               <svg
                 className="navbtnsvg"
-                width="15"
-                height="16.5"
+                width="20.46"
+                height="22.76"
                 viewBox="0 0 20 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -113,8 +113,8 @@ export default function MobilePage({
               {pause ? (
                 <>
                   <svg
-                    width="48"
-                    height="48"
+                    width="66"
+                    height="66"
                     viewBox="0 0 40 40"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,8 +128,8 @@ export default function MobilePage({
               ) : (
                 <>
                   <svg
-                    width="48"
-                    height="48"
+                    width="66"
+                    height="66"
                     viewBox="0 0 64 64"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -149,8 +149,8 @@ export default function MobilePage({
             <button>
               <svg
                 className="navbtnsvg"
-                width="15"
-                height="16.5"
+                width="20.46"
+                height="22.76"
                 viewBox="0 0 20 22"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

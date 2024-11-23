@@ -98,8 +98,8 @@
 .mobileControlPanel {
   width: 87.5vw;
   max-width: 385px;
-  margin-bottom: 10px;
-  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .mobileTimeline {
@@ -202,7 +202,7 @@ button:active .navbtnsvg .navbtns {
   border-top-right-radius: 10px;
   background-color: #6137b4;
   font-family: "MyCustomFont";
-  font-size: 17px;
+  font-size: 15px;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
