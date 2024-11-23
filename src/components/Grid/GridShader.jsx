@@ -42,7 +42,9 @@ const GridMaterial = shaderMaterial(
         }
 
         // Scale UV to create grid cells
-        vec2 grid = fract(correctedUV * 20.0);
+        vec2 grid = fract(correctedUV * ${
+          window.innerWidth <= 1000 ? "15.0" : "20.0"
+        });
 
         // Create grid lines with smoothstep
         float lineWidth = 0.05;
@@ -52,7 +54,7 @@ const GridMaterial = shaderMaterial(
         // Create diagonal wave from top-left
         float diagonal = (correctedUV.x - correctedUV.y) * 0.5;
         // Extend the animation range to ensure it goes fully off screen
-        float wavePos = fract(u_time * 0.1) * 1.7 - 1.0;
+        float wavePos = fract(u_time * 0.1) * 2.7 - 1.0;
         float distanceFromWave = abs(diagonal - wavePos);
 
         // Create subtle glowing effect
