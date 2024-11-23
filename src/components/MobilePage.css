@@ -1,217 +1,229 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 @font-face {
-    font-family: 'MyCustomFont';
-    src: url('../assets/CircularStd-Book.ttf') format('truetype');
+  font-family: "MyCustomFont";
+  src: url("../assets/CircularStd-Book.ttf") format("truetype");
 }
 
-.mobilePage{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    max-height: 100svh;
-    height: 100svh;
+.mobilePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 100svh;
+  height: 100svh;
 }
 
-.mobileDvmLogo{
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    background-color: #0D051B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 18px;
-    margin-bottom: 18px;
+.mobileDvmLogo {
+  aspect-ratio: 1;
+  width: 60px;
+  height: auto;
+  border-radius: 60px;
+  background-color: #0d051b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  margin-bottom: 18px;
 }
 
-.mobileText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.mobileDvmLogo svg {
+  aspect-ratio: 25.8 / 33;
+  width: 55%;
+  height: auto;
 }
 
-.mobileSubHeading{
-    font-family: "DM Sans";
-    font-size: 16px;
-    font-weight: 500;
+.mobileText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.mobileTitle{
-    font-family: "DM Sans";
-    font-size: 37px;
-    font-weight: 700;
+.mobileSubHeading {
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
 }
 
-.mobileSeniorPic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 72vw;
-    height: 72vw;
-    max-width: 288.2px;
-    max-height: 288.2px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-top: 3.5svh;
-    margin-bottom: 5.25svh;
+.mobileTitle {
+  font-family: "DM Sans";
+  font-size: 37px;
+  font-weight: 700;
 }
 
-.mobileSeniorImg{
-    height: 100%;
+.mobileSeniorPic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72vw;
+  height: 72vw;
+  max-width: 288.2px;
+  max-height: 288.2px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 3.5svh;
+  margin-bottom: 5.25svh;
 }
 
-.mobileSeniorDetail{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    width: 87.5vw;
-    max-width: 385px;
+.mobileSeniorImg {
+  height: 100%;
 }
 
-.mobileSeniorName{
-    font-family: "DM Sans";
-    font-size: 25px;
-    font-weight: 700;
+.mobileSeniorDetail {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 87.5vw;
+  max-width: 385px;
 }
 
-.mobileSeniorVertical{
-    font-family: "DM Sans";
-    font-size: 18px;
-    font-weight: 500;
-    color: #96887C;
-
+.mobileSeniorName {
+  font-family: "DM Sans";
+  font-size: 25px;
+  font-weight: 700;
 }
 
-.mobileHeart{
-    padding: 5px;
+.mobileSeniorVertical {
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  color: #96887c;
 }
 
-.mobileControlPanel{
-    width: 87.5vw;
-    max-width: 385px;
-    margin-bottom: 10px;
-    margin-top: 15px;
+.mobileHeart {
+  padding: 5px;
 }
 
-.mobileTimeline{
-    width: 100%;
-    margin-bottom: 5px;
+.mobileControlPanel {
+  width: 87.5vw;
+  max-width: 385px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
-.timebar{
-    width: 100%;
+.mobileTimeline {
+  width: 100%;
+  margin-bottom: 5px;
 }
 
-.mblSeekbar{
-    grid-row: 1/2;
-    grid-column: 1/2;
-    appearance: none;
-    height: 3px;
-    width: 87.5vw;
-    max-width: 385px;
-    background: #535353;
-    border-radius: 5px;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-} 
+.timebar {
+  width: 100%;
+}
+
+.mblSeekbar {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  appearance: none;
+  height: 3px;
+  width: 87.5vw;
+  max-width: 385px;
+  background: #535353;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
 
 .mblBefore {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    height: 4px;
-    width: 87.5vw;
-    max-width: 385px;
-    background: #C4C4C4;
-    transform: scaleX(0);
-    transform-origin: left;
-    /* transition: transform 0.1s linear; */
-    border-radius: 5px;
-    z-index: 2;
-    pointer-events: none;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  height: 4px;
+  width: 87.5vw;
+  max-width: 385px;
+  background: #c4c4c4;
+  transform: scaleX(0);
+  transform-origin: left;
+  /* transition: transform 0.1s linear; */
+  border-radius: 5px;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .mblSeekbar::-webkit-slider-thumb {
-    appearance: none;
-    width: 10px;
-    height: 10px; 
-    background: #C4C4C4; 
-    border-radius: 50%; 
-    
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #c4c4c4;
+  border-radius: 50%;
 }
-.mblSeekbar:hover::-webkit-slider-thumb { 
-    
-    
-}
+/* .mblSeekbar:hover::-webkit-slider-thumb {
+} */
 .mblSeekbar::-moz-range-thumb {
-    appearance: none; 
-    width: 10px;
-    height: 10px; 
-    background: #C4C4C4; 
-    border-radius: 50%; 
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #c4c4c4;
+  border-radius: 50%;
 }
-.mblSeekbar:hover::-moz-range-thumb { 
-    
-}
+/* .mblSeekbar:hover::-moz-range-thumb {
+} */
 .mblSeekbar::-ms-thumb {
-    appearance: none; 
-    width: 10px;
-    height: 10px; 
-    background: #C4C4C4; 
-    border-radius: 50%; 
-} 
-.mblSeekbar:hover::-ms-thumb { 
-    
-} 
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+/* .mblSeekbar:hover::-ms-thumb {
+} */
 
-.mobileTimestamps{
-    display: flex;
-    justify-content: space-between;
+.mobileTimestamps {
+  display: flex;
+  justify-content: space-between;
 }
 
-.mobileKeyPanel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 22px;
+.mobileKeyPanel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
 }
 
-button:hover .navbtnsvg .navbtns{
-    fill: white;
+button:hover .navbtnsvg .navbtns {
+  fill: white;
 }
 
-button:active .navbtnsvg .navbtns{
-    fill: white;
+button:active .navbtnsvg .navbtns {
+  fill: white;
 }
 
-.mobileBlurb{
-    padding:20px;
-    text-align: center;
-    width: 90vw;
-    max-width: 412.5px;
-    flex: 1;
-    overflow: scroll;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #6137B4;
-    font-family: 'MyCustomFont';
-    font-size: 17px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+.mobileBlurb {
+  padding: 20px;
+  text-align: center;
+  width: 90vw;
+  max-width: 412.5px;
+  flex: 1;
+  overflow: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #6137b4;
+  font-family: "MyCustomFont";
+  font-size: 17px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.mobileBlurbn::-webkit-scrollbar{
-    display: none;
+.mobileBlurbn::-webkit-scrollbar {
+  display: none;
 }
 
-.time{
-    font-family: "DM Sans";
-    font-size: 17px;
-    font-weight: 400;
+.time {
+  font-family: "DM Sans";
+  font-size: 17px;
+  font-weight: 400;
+}
+
+@media (height <= 781px) {
+  .mobileSeniorPic {
+    margin: 1.5svh 0 3.25svh 0;
+  }
+
+  .mobileDvmLogo {
+    margin: 11px 0;
+    width: 45px;
+  }
 }

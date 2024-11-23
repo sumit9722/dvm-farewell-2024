@@ -30,13 +30,7 @@ export default function MobilePage({
   return (
     <div className="mobilePage">
       <div className="mobileDvmLogo">
-        <svg
-          width="25.8"
-          height="33"
-          viewBox="0 0 37 48"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg viewBox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 5.57593V27.8794L15.6112 39.0296L30.2941 27.8794V5.5774L16.2619 16.2635L8.17724 10.7802L8.08471 16.0769L16.1694 21.2812L26.3913 13.7532V25.0914L15.7052 33.3612L5.29677 26.0212L5.11169 8.27132L0 5.57593Z"
             fill="white"
