@@ -108,7 +108,7 @@ export default function GridShader() {
         height: "100vh",
         zIndex: -1,
         position: "absolute",
-        opacity: 0.9,
+        opacity: 0.87,
       }}
     >
       <Canvas>
