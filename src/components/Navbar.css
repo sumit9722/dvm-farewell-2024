@@ -27,13 +27,13 @@
 .searchbar{
     width: 562.5px; /*absolute value*/
     height: 45px; /*absolute value*/
-    background-color: rgba(90, 90, 90, 0.8);
+    background-color: rgba(90, 90, 90, 0.6);
     border-radius: 37.5px;
     display: flex;
     align-items: center;
     padding-left: 36.75px; /*absolute value*/
     gap: 22.5px; /*absolute value*/
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 
