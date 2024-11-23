@@ -6,9 +6,7 @@
 }
 
 .playlistHead{
-    background-image: linear-gradient(rgba(71, 52, 107, 0.5), rgba(55, 25, 116, 0.5));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-image: linear-gradient(rgba(71, 52, 107, 1), rgba(55, 25, 116, 1));
     height: 45%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
