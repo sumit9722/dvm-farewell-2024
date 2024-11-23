@@ -13,25 +13,25 @@ const data = [
     name: "Prateek Kashyap",
     vertical: "Front-End",
     img: "/seniorImg/prateek.png",
-    audio: "/audio/sample1.mp3",
+    audio: "/audio/prateek.mp3",
   },
   {
     name: "Jay Goyal",
     vertical: "Front-End",
     img: "/seniorImg/jay.png",
-    audio: "/audio/sample2.mp3",
+    audio: "/audio/jay.mp3",
   },
   {
     name: "Vaibhav Singla",
     vertical: "Front-End",
     img: "/seniorImg/vaibhav.png",
-    audio: "/audio/sample1.mp3",
+    audio: "/audio/vaibhav.mp3",
   },
   {
     name: "Harsh Singh",
     vertical: "Back-End",
     img: "/seniorImg/harsh.jpg",
-    audio: "/audio/sample2.mp3",
+    audio: "/audio/harsh.mp3",
   },
   {
     name: "Harshith Vasireddy",
@@ -43,7 +43,7 @@ const data = [
     name: "Ritvik Mittal",
     vertical: "Game Dev",
     img: "/seniorImg/ritvik.png",
-    audio: "/audio/sample2.mp3",
+    audio: "/audio/ritivk.mp3",
   },
   {
     name: "Satwik Rath",
@@ -55,7 +55,7 @@ const data = [
     name: "Achinthya Hebbar",
     vertical: "App Dev",
     img: "/seniorImg/achintya.png",
-    audio: "/audio/sample2.mp3",
+    audio: "/audio/achintya.mp3",
   },
 ];
 
@@ -121,13 +121,13 @@ function App() {
     };
 
     if (audio) {
-      // audio.load();
+      audio.load();
       audio.addEventListener("loadedmetadata", handleLoadedMetadata);
-      // if (isPlaying) {
-      //   audio.play();
-      // } else {
-      //   audio.pause();
-      // }
+      if (isPlaying) {
+        audio.play();
+      } else {
+        audio.pause();
+      }
     }
     return () => {
       if (audio) {
@@ -168,8 +168,8 @@ function App() {
           currTime={currDuration}
         />
       </div>
-      {/* <audio ref={audioRef} src={data[currentIndex].audio} onEnded={handleNext}/> */}
-      <audio ref={audioRef} src="/audio/universal.mp3" loop/>
+      <audio ref={audioRef} src={data[currentIndex].audio} onEnded={handleNext}/>
+      {/* <audio ref={audioRef} src="/audio/universal.mp3" loop/> */}
     </>
   );
 }
