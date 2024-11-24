@@ -15,7 +15,7 @@
 .carouselTitle {
   width: 90%; /*absolute value*/
   display: flex;
-  gap: 133.45px; /*absolute value*/
+  justify-content: space-between; /*absolute value*/
 }
 
 .carouselTitleText {
