@@ -227,3 +227,18 @@ button:active .navbtnsvg .navbtns {
     width: 45px;
   }
 }
+
+@media (max-height:720px) {
+  .mobileBlurb{
+    font-size: 14px;
+  }
+}
+
+@media (max-height:700px) {
+  .mobileBlurb{
+    display: block;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    min-height: 50px;
+  }
+}
