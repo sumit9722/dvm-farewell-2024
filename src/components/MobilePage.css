@@ -239,6 +239,6 @@ button:active .navbtnsvg .navbtns {
     display: block;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    min-height: 50px;
+    min-height: fit-content;
   }
 }
