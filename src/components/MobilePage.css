@@ -205,6 +205,7 @@ button:active .navbtnsvg .navbtns {
   font-size: 15px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  min-height: fit-content;
 }
 
 .mobileBlurbn::-webkit-scrollbar {
