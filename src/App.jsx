@@ -40,6 +40,12 @@ const data = [
     audio: "/audio/universal.mp3",
   },
   {
+    name: "Utkarsh Sharma",
+    vertical: "Back-End",
+    img: "/seniorImg/utkarsh.jpg",
+    audio: "/audio/universal.mp3",
+  },
+  {
     name: "Ritvik Mittal",
     vertical: "Game Dev",
     img: "/seniorImg/ritvik.png",
@@ -169,7 +175,11 @@ function App() {
           currTime={currDuration}
         />
       </div>
-      <audio ref={audioRef} src={data[currentIndex].audio} onEnded={handleNext}/>
+      <audio
+        ref={audioRef}
+        src={data[currentIndex].audio}
+        onEnded={handleNext}
+      />
       {/* <audio ref={audioRef} src="/audio/universal.mp3" loop/> */}
     </>
   );
