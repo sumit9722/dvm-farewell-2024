@@ -52,6 +52,12 @@ const data = [
     audio: "/audio/ritvik.mp3",
   },
   {
+    name: "Nitin Aravind Birur",
+    vertical: "Game Dev",
+    img: "/seniorImg/nitin.png",
+    audio: "/audio/universal.mp3",
+  },
+  {
     name: "Satwik Rath",
     vertical: "UI/UX",
     img: "/seniorImg/satwik.png",
