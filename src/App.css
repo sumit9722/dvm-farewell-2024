@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100svh;
     width: 100vw;
     background-image: linear-gradient(
       rgba(72, 37, 141, 0.45) 0%,
