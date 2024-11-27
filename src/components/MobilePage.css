@@ -244,4 +244,8 @@ button:active .navbtnsvg .navbtns {
     padding-bottom: 1vh;
     min-height: fit-content;
   }
+  .mobileSeniorPic {
+    width: 35vh;
+    height: 35vh;
+  }
 }
