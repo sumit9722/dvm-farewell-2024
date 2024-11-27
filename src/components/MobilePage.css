@@ -206,6 +206,8 @@ button:active .navbtnsvg .navbtns {
   scrollbar-width: none;
   -ms-overflow-style: none;
   min-height: fit-content;
+  padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .mobileBlurbn::-webkit-scrollbar {
